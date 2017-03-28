@@ -13,13 +13,13 @@ import org.joda.time.DateTime;
  *
  * @author adriano
  */
-public class Exercicio1 {
+public class WordCount {
 
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
-        Job job = Job.getInstance(conf, "Exercicio1");
+        Job job = Job.getInstance(conf, "word count");
         job.setJarByClass(WordCount.class);
-        job.setMapperClass(SplitSpaceMapper.class);
+        job.setMapperClass(TokenizerMapper.class);
         job.setCombinerClass(IntSumReducer.class);
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
