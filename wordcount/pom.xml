@@ -6,8 +6,8 @@
         <artifactId>MapReduce</artifactId>
         <version>0.01</version>
     </parent>
-    <name>MapReduceExercicio1</name>
-    <artifactId>exercicio1</artifactId>
+    <name>MapReduceWordCount</name>
+    <artifactId>wordcount</artifactId>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -19,27 +19,7 @@
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>2.9.9</version>
-        </dependency>
-        <!-- JDK Tools -->
-        <!--        <dependency>
-            <groupId>jdk.tools</groupId>
-            <artifactId>jdk.tools</artifactId>
-            <scope>system</scope>
-            <version>1.8.0_73</version>
-            <systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>
-        </dependency>-->
-        <!-- Hadoop Core -->
-        <!--        <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-core</artifactId>
-            <version></version>
-        </dependency>-->
-        <!-- Hadoop Mapreduce Client Core -->
-        <!--        <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-mapreduce-client-core</artifactId>
-            <version>2.7.3</version>
-        </dependency>-->
+        </dependency>        
     </dependencies>
     <build>
         <plugins>
@@ -57,7 +37,7 @@
                     <!-- MainClass in mainfest make a executable jar -->
                     <archive>
                         <manifest>
-                            <mainClass>io.adrianosb.Exercicio1</mainClass>
+                            <mainClass>io.adrianosb.WordCount</mainClass>
                         </manifest>
                     </archive>
 

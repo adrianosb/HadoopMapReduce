@@ -18,7 +18,7 @@ public class Exercicio1 {
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "Exercicio1");
-        job.setJarByClass(WordCount.class);
+        job.setJarByClass(Exercicio1.class);
         job.setMapperClass(SplitSpaceMapper.class);
         job.setCombinerClass(IntSumReducer.class);
         job.setReducerClass(IntSumReducer.class);
