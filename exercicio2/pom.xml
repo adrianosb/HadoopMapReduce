@@ -6,8 +6,8 @@
         <artifactId>MapReduce</artifactId>
         <version>0.01</version>
     </parent>
-    <name>MapReduceExercicio1</name>
-    <artifactId>exercicio1</artifactId>
+    <name>MapReduceExercicio2</name>
+    <artifactId>exercicio2</artifactId>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -37,7 +37,7 @@
                     <!-- MainClass in mainfest make a executable jar -->
                     <archive>
                         <manifest>
-                            <mainClass>io.adrianosb.Exercicio1</mainClass>
+                            <mainClass>io.adrianosb.Exercicio2</mainClass>
                         </manifest>
                     </archive>
 
